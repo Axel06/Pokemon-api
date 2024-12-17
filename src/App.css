@@ -88,4 +88,52 @@
   display: block; 
 }
 
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Colonnes dynamiques */
+  gap: 12px; /* Réduit l'espace entre les cartes */
+  padding: 16px;
+}
+
+.pokemon-card {
+  background-color: lightgray;
+  border-radius: 8px;
+  padding: 8px; /* Réduit le padding pour plus de place */
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Assure que les cartes soient carrées */
+  aspect-ratio: 1 / 1;
+}
+
+.pokemon-card img {
+  width: 60%; /* Ajuste la taille de l'image */
+  height: auto;
+}
+
+.pokemon-card h3 {
+  font-size: 0.9rem; /* Réduit légèrement la taille du texte */
+  margin-top: 8px;
+}
+
+/* Logo responsive */
+.pokemon-logo {
+  width: 150px; /* Taille par défaut */
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 480px) {
+  .pokemon-logo {
+    width: 120px; /* Logo plus petit sur mobile */
+  }
+
+  .pokemon-card h3 {
+    font-size: 0.8rem; /* Texte plus petit sur mobile */
+  }
+}
+
 
