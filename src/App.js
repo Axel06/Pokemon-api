@@ -72,7 +72,7 @@ function App() {
     <div className="App">
       {/* Logo Pokémon */}
       <img 
-        src="/logopoke.svg" 
+        src={`${process.env.PUBLIC_URL}/logopoke.svg`} 
         alt="Logo Pokémon" 
         className="pokemon-logo" 
       />
