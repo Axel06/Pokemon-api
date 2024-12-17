@@ -39,3 +39,12 @@ Bienvenue dans mon projet **Pokémon API** ! Cette application React utilise l'A
    ```bash
    git clone https://github.com/Axel06/Pokemon-api.git
    cd Pokemon-api
+
+2. **Installe les dépendances** :
+   ```bash
+   npm install
+
+3. **Lance le projet en local** :
+   ```bash
+   npm start   
+   
